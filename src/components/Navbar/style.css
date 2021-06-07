@@ -1,0 +1,13 @@
+.li-item{
+    font-size: 1.7rem;
+}
+@media only screen and (max-width: 400px){
+    .li-item{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (min-width: 401px) {
+    .li-item{
+        font-size: 1.3rem;
+    }
+}

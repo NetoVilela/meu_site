@@ -1,0 +1,29 @@
+.apresentation{
+    display: flex;
+    flex-wrap: nowrap;  
+    margin-top: 10vh;
+    height: 80vh;
+    border: solid 1px red;
+}
+
+@media only screen and (max-width: 400px){
+    .apresentation{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 401px) {
+    .apresentation{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 900px){
+    .apresentation{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+}
