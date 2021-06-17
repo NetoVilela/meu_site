@@ -5,7 +5,7 @@
     height: 300px;
     border: #fff solid 2px;
     border-radius: 50%;
-    background: url('./imagem.jpeg') no-repeat center;
+    /* /background: url('./imagem.jpeg') no-repeat center; */
     background-size: cover;
     margin-right: 30px;
 }
