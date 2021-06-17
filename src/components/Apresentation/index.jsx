@@ -7,7 +7,7 @@ import './style.css';
 
 const Apresentation = () =>{
     return(
-        <div className="d-flex apresentation">
+        <div className="d-flex  apresentation">
             <Image />
             <Text className="text-light text-justify">
             Lorem Ipsum is simply dummy text of
