@@ -54,6 +54,7 @@ export const TopicCircle = styled.div`
 `;
 
 export const TopicName = styled.div`
+    font-style: italic;
     font-size: 2.5em;
     margin: 0px 10px;
 `;

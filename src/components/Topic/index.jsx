@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Collapse, CardBody, Card } from 'reactstrap';
+import { Collapse } from 'reactstrap';
 
 import {TopicCircle, TopicStructure, TopicHeader, TopicLine, TopicName, Icon, TopicContent} from './styled.jsx';
 
