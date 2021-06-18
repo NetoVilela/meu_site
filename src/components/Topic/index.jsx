@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Collapse, CardBody, Card } from 'reactstrap';
 
-import {TopicCircle, TopicContent, TopicHeader, TopicLine, TopicName, Icon} from './styled.jsx';
+import {TopicCircle, TopicStructure, TopicHeader, TopicLine, TopicName, Icon, TopicContent} from './styled.jsx';
 
 
 const Topic = (props) => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => setIsOpen(!isOpen);
+    console.log(isOpen)
     return (
-        <TopicContent>
+        <TopicStructure>
             <TopicHeader >
                 <TopicCircle>
                     {props.number}
@@ -14,9 +19,14 @@ const Topic = (props) => {
                     {props.title}
                 </TopicName>
                 <TopicLine />
-                <Icon className="fas fa-plus icon"></Icon>
+                <Icon className="fas fa-plus icon" onClick={toggle} style={{ marginBottom: '1rem' }}></Icon>
             </TopicHeader>
-        </TopicContent>
+            <Collapse isOpen={isOpen}>
+                <TopicContent>
+                    {props.children}
+                </TopicContent>
+            </Collapse>
+        </TopicStructure>
     )
 }
 

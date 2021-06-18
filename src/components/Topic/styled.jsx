@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const TopicContent = styled.div`
+export const TopicStructure = styled.div`
     border: solid 1px rgba(62, 63, 85, 0.4);
     border-radius: 6px;
     margin: 10vh 0;
@@ -77,4 +77,8 @@ export const TopicLine = styled.div`
     flex-grow: 1;
     height: 1px;
     border-bottom: solid 1px #3E3F55;
+`;
+
+export const TopicContent = styled.div`
+    margin: 2vh;
 `;
