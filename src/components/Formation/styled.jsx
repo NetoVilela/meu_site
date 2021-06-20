@@ -4,12 +4,12 @@ export const FormationContent = styled.div`
     margin-bottom: 5vh;
     border: solid 1px #3E3F55;
     border-radius: 5px;
-    box-shadow: 4px 4px 8px 5px #3E3F55;
+    box-shadow: 2px 2px 2px #3E3F55;
 
     :hover{
         margin-top: -8px;
         margin-right: -10px;
-        transition: 0.4s;
+        transition: 0.3s;
     }
 `;
 

@@ -8,7 +8,6 @@ const Topic = (props) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
-    console.log(isOpen)
     return (
         <TopicStructure>
             <TopicHeader >
@@ -19,8 +18,9 @@ const Topic = (props) => {
                     {props.title}
                 </TopicName>
                 <TopicLine />
-                <Icon className="fas fa-plus icon" onClick={toggle} style={{ marginBottom: '1rem' }}></Icon>
+                <Icon className= {isOpen ? "fas fa-times icon iconHide" : 'fas fa-plus icon '} onClick={toggle} style={{ marginBottom: '1rem' }}></Icon>
             </TopicHeader>
+            
             <Collapse isOpen={isOpen}>
                 <TopicContent>
                     {props.children}
