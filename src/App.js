@@ -2,6 +2,11 @@ import Navbar  from './components/Navbar/index';
 import Apresentation from './components/Apresentation/index';
 import Topic from './components/Topic/index';
 import Formation from './components/Formation/index';
+import Knowledge from './components/Knowledge/index';
+import Knowledges from './components/Knowledges/index';
+
+//Images
+import html5 from './images/html5.png';
 
 
 function App() {
@@ -28,6 +33,15 @@ function App() {
 
       </Topic>
       
+      <Topic title="Meus conhecimentos" number={2}>
+        <Knowledges>
+          <Knowledge src={html5} />
+          <Knowledge src={html5} />
+          <Knowledge src={html5} />
+          <Knowledge src={html5} />
+        </Knowledges>
+      </Topic>
+
     </div>
   );
 }
