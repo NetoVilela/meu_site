@@ -57,6 +57,15 @@ export const TopicName = styled.div`
     font-style: italic;
     font-size: 2.5em;
     margin: 0px 10px;
+    @media only screen and (max-width: 600px){
+        font-size: 1.31em;
+    }
+    @media only screen and (min-width: 601px) and (max-width: 900px){
+        font-size: 1.5em;
+    }
+    @media only screen and(min-width: 601px) and(max-width: 900px){
+        font-size: 2em;
+    }
 `;
 
 export const Icon = styled.div`
