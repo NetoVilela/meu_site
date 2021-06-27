@@ -64,8 +64,6 @@ const NavBar = () => {
                         <NavLink href="#contato" className="text-light li-item">Contato</NavLink>
                     </NavItem>
                 </Nav>
-        
-          
         </Collapse>
       </Navbar>
     </div>
