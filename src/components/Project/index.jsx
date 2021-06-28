@@ -6,7 +6,7 @@ const Project = (props) =>{
     return(
         <ProjectBox>
             <ProjectImage src={props.src} />
-            <ProjectText >{props.description} <Link href={props.link} target='blank'>Clique aqui e acesse.</Link></ProjectText>
+            <ProjectText >{props.description} <Link href={props.link} target='_blank'>Clique aqui e acesse.</Link></ProjectText>
         </ProjectBox>
     )
 }

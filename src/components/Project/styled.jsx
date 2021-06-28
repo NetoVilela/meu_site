@@ -9,7 +9,7 @@ export const Projects = styled.div`
 export const ProjectBox = styled.div`
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 300px;
     padding: 1vh;
     border: solid 1px #3E3F55;
     border-radius: 5px;
@@ -20,9 +20,8 @@ export const ProjectBox = styled.div`
 `;
 
 export const ProjectImage = styled.img`
-    width: 100%;
+    height: 250px;
     max-height: 30vh;
-    
 `;
 
 export const ProjectText = styled.p`

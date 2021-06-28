@@ -6,6 +6,8 @@ import Knowledge from './components/Knowledge/index';
 import Knowledges from './components/Knowledges/index';
 import Project from './components/Project/index';
 import {Projects} from './components/Project/styled';
+import Contact from './components/Contact/index';
+import Verse from './components/Verse/index';
 
 //Images
 import html5 from './images/html5.png';
@@ -21,6 +23,9 @@ import docker from './images/docker.png';
 import github from './images/github.png';
 import listadetarefas from './images/listadetarefas.png';
 import blog from './images/blog.png';
+import gmail from './images/gmail.png'
+import instagram from './images/instagram.png';
+import whatsapp from './images/whatsapp.png';
 
 
 function App() {
@@ -72,6 +77,15 @@ function App() {
           description="Blog online com cadastro de postagens. Criado usando cakePHP 2, bootstrap, e PostgreSql." />
         </Projects>  
       </Topic>
+
+      <Topic title = "Meus contatos" number={4}>
+        <Contact src={github} link="http://www.github.com/NetoVilela" text="github.com/NetoVilela"/>
+        <Contact src={whatsapp} link="https://api.whatsapp.com/send?phone=5584996067943" text="(84) 9 9606-7943"/>
+        <Contact src={instagram} link="https://www.instagram.com/netovilelaf/" text="@netovilelaf"/>
+        <Contact src={gmail} text="favneto.a.v.n@gmail.com"/>
+      </Topic>
+
+      <Verse text="Mas tudo deve ser feito com decência e ordem." reference="- 1 Coríntios 14:40" />
 
     </div>
   );
