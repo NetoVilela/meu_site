@@ -67,7 +67,7 @@ function App() {
       <Topic title = "Meus projetos" number={3}>
         <Projects>
           <Project src={listadetarefas} link="http://listadetarefas-nodejs.herokuapp.com/"
-          description="Lista de tarefas online com cadastro e login. Criado usando NodeJS. Clique aqui e acesse." />
+          description="Lista de tarefas online com cadastro e login. Criado usando NodeJS."/>
           <Project src={blog} link="http://blog-cake-php.herokuapp.com/"
           description="Blog online com cadastro de postagens. Criado usando cakePHP 2, bootstrap, e PostgreSql." />
         </Projects>  
