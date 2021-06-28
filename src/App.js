@@ -4,6 +4,8 @@ import Topic from './components/Topic/index';
 import Formation from './components/Formation/index';
 import Knowledge from './components/Knowledge/index';
 import Knowledges from './components/Knowledges/index';
+import Project from './components/Project/index';
+import {Projects} from './components/Project/styled';
 
 //Images
 import html5 from './images/html5.png';
@@ -17,7 +19,8 @@ import nodejs from './images/nodejs.png';
 import figma from './images/figma.png';
 import docker from './images/docker.png';
 import github from './images/github.png';
-
+import listadetarefas from './images/listadetarefas.png';
+import blog from './images/blog.png';
 
 
 function App() {
@@ -58,6 +61,16 @@ function App() {
           <Knowledge src={github} level={3} />
           <Knowledge src={figma} level={2} />
         </Knowledges>
+      </Topic>
+
+
+      <Topic title = "Meus projetos" number={3}>
+        <Projects>
+          <Project src={listadetarefas} link="http://listadetarefas-nodejs.herokuapp.com/"
+          description="Lista de tarefas online com cadastro e login. Criado usando NodeJS. Clique aqui e acesse." />
+          <Project src={blog} link="http://blog-cake-php.herokuapp.com/"
+          description="Blog online com cadastro de postagens. Criado usando cakePHP 2, bootstrap, e PostgreSql." />
+        </Projects>  
       </Topic>
 
     </div>

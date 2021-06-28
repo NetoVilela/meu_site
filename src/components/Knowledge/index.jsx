@@ -5,8 +5,6 @@ import { KnowledgeContent, Image, ProgressBarGray, ProgressBarGreen, ProgressBar
 import './style.css';
 
 const Knowledge = (props) =>{
-
-    console.log(props.level)
     return(
             <KnowledgeContent >
                 <Image src={props.src}></Image>
