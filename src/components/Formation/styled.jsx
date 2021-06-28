@@ -34,7 +34,6 @@ export const Institution = styled.h4`
 export const FormationBar = styled.div`
     margin: 20px 5px;
     width: 40vw;
-    
 `;
 
 export const Date = styled.div`
