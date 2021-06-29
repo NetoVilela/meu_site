@@ -23,6 +23,9 @@ import nodejs from './images/nodejs.png';
 import figma from './images/figma.png';
 import docker from './images/docker.png';
 import github from './images/github.png';
+import postgres from './images/postgresql.png';
+import mysql from './images/mysql.png';
+import mongodb from './images/mongodb.png';
 import listadetarefas from './images/listadetarefas.png';
 import blog from './images/blog.png';
 import gmail from './images/gmail.png'
@@ -71,6 +74,9 @@ function App() {
             <Knowledge src={docker} level={3} />
             <Knowledge src={github} level={3} />
             <Knowledge src={figma} level={2} />
+            <Knowledge src={postgres} level={3} />
+            <Knowledge src={mysql} level={2} />
+            <Knowledge src={mongodb} level={1} />
           </Knowledges>
         </Topic>
 
