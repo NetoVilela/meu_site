@@ -11,24 +11,50 @@ export const FormationContent = styled.div`
         margin-right: -10px;
         transition: 0.3s;
     }
+
+    
 `;
 
 export const Degree = styled.h2`
-    font-size: 2em;
     margin: 10px 5px;
     font-weight: normal;
+    @media only screen and (max-width: 600px){
+        font-size: 0.7em;
+    }
+    @media only screen and (min-width: 601px) and (max-width: 900px){
+        font-size: 0.7em;
+    }
+    @media only screen and(min-width: 901px){
+        font-size: 1em;
+    }
 `;
 
 export const Course = styled.h4`
-    font-size: 1.7em;
     margin: 10px 5px;
     font-weight: normal;
+    @media only screen and (max-width: 600px){
+        font-size: 0.7em;
+    }
+    @media only screen and (min-width: 601px) and (max-width: 900px){
+        font-size: 0.7em;
+    }
+    @media only screen and(min-width: 901px){
+        font-size: 1em;
+    }
 `;
 
 export const Institution = styled.h4`
-    font-size: 1.7em;
     margin: 10px 5px;
     font-weight: normal;
+    @media only screen and (max-width: 600px){
+        font-size: 0.7em;
+    }
+    @media only screen and (min-width: 601px) and (max-width: 900px){
+        font-size: 0.7em;
+    }
+    @media only screen and(min-width: 901px){
+        font-size: 1em;
+    }
 `;
 
 export const FormationBar = styled.div`
@@ -37,7 +63,15 @@ export const FormationBar = styled.div`
 `;
 
 export const Date = styled.div`
-    font-size: 1.4em;
     margin: 10px 5px;
     font-weight: normal;
+    @media only screen and (max-width: 600px){
+        font-size: 0.6em;
+    }
+    @media only screen and (min-width: 601px) and (max-width: 900px){
+        font-size: 0.7em;
+    }
+    @media only screen and(min-width: 901px){
+        font-size: 1em;
+    }
 `;

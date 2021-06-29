@@ -6,7 +6,7 @@ const Text = styled.p`
     align-items:center;
     font-size: 1.2rem;
     text-align: center;
-    margin-top : 6vh;
+    
     
 
     @media only screen and (max-width: 400px) {

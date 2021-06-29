@@ -9,7 +9,7 @@ const Topic = (props) => {
 
     const toggle = () => setIsOpen(!isOpen);
     return (
-        <TopicStructure>
+        <TopicStructure id={props.id}>
             <TopicHeader >
                 <TopicCircle>
                     {props.number}
