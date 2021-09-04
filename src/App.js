@@ -32,6 +32,7 @@ import gmail from './images/gmail.png'
 import instagram from './images/instagram.png';
 import whatsapp from './images/whatsapp.png';
 import up from './images/up.png';
+import selecao_diet_system from './images/selecao_diet_system.png';
 
 
 function App() {
@@ -87,6 +88,8 @@ function App() {
             description="Lista de tarefas online com cadastro e login. Criado usando NodeJS."/>
             <Project src={blog} link="http://blog-cake-php.herokuapp.com/"
             description="Blog online com cadastro de postagens. Criado usando cakePHP 2, bootstrap, e PostgreSql." />
+            <Project src={selecao_diet_system} link="https://selecao-dietsystem.vercel.app/"
+            description="Projeto 100% ReactJS criado para participar do processo seletivo na DietSystem. Apenas front-end." />
           </Projects>  
         </Topic>
 
