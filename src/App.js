@@ -33,6 +33,7 @@ import instagram from './images/instagram.png';
 import whatsapp from './images/whatsapp.png';
 import up from './images/up.png';
 import selecao_diet_system from './images/selecao_diet_system.png';
+import sistemacursos from './images/sistema_cursos.png';
 
 
 function App() {
@@ -48,7 +49,7 @@ function App() {
           <Formation course="Ciências e Tecnologia"
             institution="Universidade Federal do Rio Grande do Norte"
             initials="UFRN" degree="Bacharelado" status="Cursando"
-            dateStart="Fevereiro/2019" dateEnd="Fevereiro/2022" concluded={false} bar='true' />
+            dateStart="Fevereiro/2019" dateEnd="Dezembro/2022" concluded={false} bar='true' />
 
           <Formation course="Programador Web"
             institution="Instituto Federal de Ciência e Tecnologia do Rio Grande do Norte"
@@ -67,7 +68,7 @@ function App() {
             <Knowledge src={html5} level={4} />
             <Knowledge src={css3} level={4} />
             <Knowledge src={javascript} level={4} />
-            <Knowledge src={jquery} level={2} />
+            <Knowledge src={jquery} level={3} />
             <Knowledge src={bootstrap} level={4} />
             <Knowledge src={react} level={3} />
             <Knowledge src={php} level={3} />
@@ -75,7 +76,7 @@ function App() {
             <Knowledge src={docker} level={3} />
             <Knowledge src={github} level={3} />
             <Knowledge src={figma} level={2} />
-            <Knowledge src={postgres} level={3} />
+            <Knowledge src={postgres} level={4} />
             <Knowledge src={mysql} level={2} />
             <Knowledge src={mongodb} level={1} />
           </Knowledges>
@@ -84,6 +85,9 @@ function App() {
 
         <Topic title = "Meus projetos" number={3} id="projetos">
           <Projects>
+          <Project src={sistemacursos} link="https://cursos-front.vercel.app/login"
+            description="Sistema de gerenciamento de cursos. Criado utilizando ReactJS, Bootstrap, NodeJS (typescript) e PostgreSql. 
+            Possui autenticação JWT. Utilize os seguintes dados para acessar, email: visitante@email.com senha: 1234"/>
             <Project src={listadetarefas} link="http://listadetarefas-nodejs.herokuapp.com/"
             description="Lista de tarefas online com cadastro e login. Criado usando NodeJS."/>
             <Project src={blog} link="http://blog-cake-php.herokuapp.com/"
