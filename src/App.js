@@ -34,6 +34,9 @@ import whatsapp from './images/whatsapp.png';
 import up from './images/up.png';
 import selecao_diet_system from './images/selecao_diet_system.png';
 import sistemacursos from './images/sistema_cursos.png';
+import typescript from './images/typescript.png';
+import materialui from './images/materialui_logo.png';
+import nestjs from './images/nestjs.png';
 
 
 function App() {
@@ -43,13 +46,13 @@ function App() {
         <Navbar id="topo" />
         <Apresentation text="
         Seja bem vindo ao meu portfólio. Meu nome é Neto Vilela e eu sou um desenvolvedor web focado nas tecnologias JavaScript,
-         como ReactJS e NodeJS. Dá uma olhada na página para mais informações." />
+        como ReactJS e NodeJS. Dá uma olhada na página para mais informações." />
         <Topic title="Minhas formações" number={1} id="formacoes">
 
-          <Formation course="Ciências e Tecnologia"
+          <Formation course="Ciências e Tecnologia da Computação"
             institution="Universidade Federal do Rio Grande do Norte"
             initials="UFRN" degree="Bacharelado" status="Cursando"
-            dateStart="Fevereiro/2019" dateEnd="Dezembro/2022" concluded={false} bar='true' />
+            dateStart="Fevereiro/2019" dateEnd="Junho/2023" concluded={false} bar='true' />
 
           <Formation course="Programador Web"
             institution="Instituto Federal de Ciência e Tecnologia do Rio Grande do Norte"
@@ -70,24 +73,26 @@ function App() {
             <Knowledge src={javascript} level={4} />
             <Knowledge src={jquery} level={3} />
             <Knowledge src={bootstrap} level={4} />
-            <Knowledge src={react} level={3} />
-            <Knowledge src={php} level={3} />
+            <Knowledge src={react} level={4} />
+            <Knowledge src={php} level={4} />
             <Knowledge src={nodejs} level={3} />
             <Knowledge src={docker} level={3} />
-            <Knowledge src={github} level={3} />
-            <Knowledge src={figma} level={2} />
+            <Knowledge src={github} level={4} />
+            <Knowledge src={figma} level={3} />
             <Knowledge src={postgres} level={4} />
             <Knowledge src={mysql} level={2} />
             <Knowledge src={mongodb} level={1} />
+            <Knowledge src={typescript} level={3} />
+            <Knowledge src={materialui} level={3} />
+            <Knowledge src={nestjs} level={3} />
           </Knowledges>
         </Topic>
 
 
         <Topic title = "Meus projetos" number={3} id="projetos">
           <Projects>
-          <Project src={sistemacursos} link="https://cursos-front.vercel.app/login"
-            description="Sistema de gerenciamento de cursos. Criado utilizando ReactJS, Bootstrap, NodeJS (typescript) e PostgreSql. 
-            Possui autenticação JWT. Utilize os seguintes dados para acessar, email: visitante@email.com senha: 1234"/>
+          <Project src={sistemacursos} link="https://cursos-front.vercel.app/dashboard"
+            description="Frontend de um sistema de gerenciamento de cursos. Criado utilizando ReactJS, Bootstrap. A API está dasativada, por isso os loadings estarão presentes em todas páginas da aplicação."/>
             <Project src={listadetarefas} link="http://listadetarefas-nodejs.herokuapp.com/"
             description="Lista de tarefas online com cadastro e login. Criado usando NodeJS."/>
             <Project src={blog} link="http://blog-cake-php.herokuapp.com/"
